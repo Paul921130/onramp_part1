@@ -61,7 +61,7 @@ export function makeServer({ environment = "test" } = {}) {
 
         routes() {
             this.namespace = "api";
-            this.timing = 4000; // default
+            this.timing = 400; // default
             this.get("/properties", (schema) => {
                 console.log(schema);
                 return schema.properties.all();
